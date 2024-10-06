@@ -1,43 +1,27 @@
-/*This program is to implement Multilevel Inheritance
- * Written by Niya Justine
- * CSE B 
- * Roll no 61 */
-package cseb23rollno61;
-import java.util.Scanner;
-class Vehicle {
-	String model;
-	int year;
+package cseb23s3Rollno61;
+class Animaliae {
+	void kingdom() {
+		System.out.println("I am animaliae");
+	}
 }
-class Car extends Vehicle {
-	int numberOfDoors;
+class Birds extends Animaliae {
+	void phyllum() {
+		System.out.println("I am ave");
+	}
 }
-class ElectricCar extends Car {
-	String batteryCapacity;
-	void display() {
-		System.out.print("\nModel :"+model);
-		System.out.print("\nYear :"+year);
-		System.out.print("\nNumber of Doors :"+numberOfDoors);
-		System.out.print("\nBattery Capacity :"+batteryCapacity);
+class Peacock extends Birds {
+	void Species() {
+		System.out.println("I am the national bird of India");
 	}
 }
 public class MultilevelInheritance {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		ElectricCar ec = new ElectricCar();
-		
-		System.out.print("Enter the details  of the car :");
-		System.out.print("\nEnter the car model :");
-		ec.model = sc.nextLine();
-		System.out.print("Enter the year :");
-		ec.year = sc.nextInt();
-		System.out.print("\nEnter the number of Doors :");
-		ec.numberOfDoors = sc.nextInt();
-		System.out.print("\nEnter the battery capacity :");
-		ec.batteryCapacity = sc.next();
-		
-		System.out.print("\nCAR DETAILS :");
-		ec.display();
-		sc.close();
+		Peacock p = new Peacock();
+		p.phyllum();
+		p.Species();
+		p.kingdom();
 	}
+
 }
+
