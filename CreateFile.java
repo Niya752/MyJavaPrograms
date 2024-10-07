@@ -1,10 +1,10 @@
-package cseb23rollno61;
+package module3;
 import java.io.*;
 public class CreateFile {
 
 	public static void main(String[] args) {
 		try {
-			File obj = new File("input.txt");
+			File obj = new File("file2.txt");
 			if (obj.createNewFile()) {
 				System.out.println("File created: "+ obj.getName());
 				
